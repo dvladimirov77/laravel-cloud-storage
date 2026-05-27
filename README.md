@@ -21,7 +21,7 @@ App\Services\CloudStorage\CloudStorageServiceProvider::class,
 3. Опубликуйте конфиг:
 ```bash
 php artisan vendor:publish --tag=cloud-storage-config
-	```
+```
 4. Укажите нужный диск в .env:
 CLOUD_STORAGE_DISK=s3
 	
@@ -39,7 +39,7 @@ $url = $storage->temporaryUrl($result->path, 60);
 
 // Удаление
 $storage->delete($result->path);
-	```
+```
 ## Тестирование
 ```bash
 php artisan test --filter=CloudStorageServiceTest
